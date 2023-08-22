@@ -15,21 +15,21 @@ public class Ex11 {
     }
 
     public static void exibirSalarioFinal(double salFinal) {
-        System.out.println("O salário final do vendedor é: " + salFinal);
+        System.out.println("Salário final do vendedor é: " + salFinal);
     }
     public static void main(String[] args) {
         Scanner nx = new Scanner(System.in);
 
-        System.out.print("Digite o número de carros vendidos: ");
+        System.out.print("Número de carros vendidos: ");
         int nCarro = nx.nextInt();
 
-        System.out.print("Digite o valor total das vendas: ");
+        System.out.print("Valor total das vendas: ");
         double total = nx.nextDouble();
 
-        System.out.print("Digite o salário fixo do vendedor: ");
+        System.out.print("Salário fixo do vendedor: ");
         double salarioF = nx.nextDouble();
 
-        System.out.print("Digite o valor por carro vendido: ");
+        System.out.print("Valor por carro vendido: ");
         double vCarro = nx.nextDouble();
 
         double comis = calculoComis(nCarro, vCarro);
