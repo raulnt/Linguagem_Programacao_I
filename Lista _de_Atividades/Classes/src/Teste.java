@@ -1,4 +1,4 @@
-public class CarroTestar {
+public class Teste {
 
     public static void main(String[] args) {
         
