@@ -1,21 +1,23 @@
 public class Carro {
-    
-    //ATRIBUTOS
+
+    //Atributos
     String nome;
     String marca;
-    int ano;
     int vel;
 
-    //MÉTODOS
+    //Métodos
     void acelerar(int aceleracao) {
-        vel+=aceleracao;
+        vel += aceleracao;
     }
 
     void freiar(int reduzir) {
-        vel-=reduzir;
+        vel -= reduzir; 
     }
 
-    void buzinar() {
+    void buzinar(){
         System.out.println("Bibiiiiiiiih");
     }
+
+
+    
 }
