@@ -117,6 +117,81 @@ public class Teste {
         p1.abrir();
         
         p1.fechar();
+
+        //-----------------------------------------------------------//
+
+        //TECLADO
+        Teclado t1 = new Teclado();
+
+        //Atribudos
+        t1.cor = "Preto";
+        t1.marca = "HyperX";
+        t1.numTeclas = 88;
+
+        System.out.println("\n" + t1.cor + "\n" + t1.marca + "\n" + t1.numTeclas );
+
+        //Métodos
+        t1.ligar();
+
+        t1.teclar();
+
+        t1.desligar();
+
+        //-----------------------------------------------------------//
+
+        //TELEFONE
+        Telefone tel1 = new Telefone();
+
+        //Atributos
+        tel1.marca = "Samgung";
+        tel1.sistema = "Android";
+        tel1.cor = "Prata";
+
+        System.out.println("\n" + tel1.marca + "\n" + tel1.sistema + "\n" + tel1.cor);
+
+        //Métodos
+        tel1.discar();
+        
+        tel1.ligarChamada();
+
+        tel1.desligarChamada();
+
+        //-----------------------------------------------------------//
+
+        //TV
+        Tv tv1 = new Tv();
+
+        //Atributos
+        tv1.marca = "LG";
+        tv1.cor = "Prata";
+        tv1.funciona = true;
+
+        System.out.println("\n" +tv1.marca+ "\n" +tv1.cor+ "\n" +tv1.funciona);
+
+        //Métodos
+        tv1.ligar();
+
+        tv1.mudarCanal();
+
+        tv1.desligar();
+
+        //-----------------------------------------------------------//
+
+        //VENTILADOR
+        Ventilador vent1 = new Ventilador();
+
+        //Atributos
+        vent1.marca = "Britania";
+        vent1.cor = "Preto";
+        vent1.voltz = 220;
+
+        System.out.println("\n" +vent1.marca+ "\n" +vent1.cor+ "\n" +vent1.voltz);
+
+        vent1.ligar();
+
+        vent1.mover();
+
+        vent1.desligar();
     }
 
 }
