@@ -49,27 +49,21 @@ public class Teste {
 
         //LIVRO
         Livro l1 = new Livro();
-
-        //Atributos
-        l1.cor = "Amarelo";
-        l1.genero = "Auto-Ajuda";
-        l1.paginas = 200;
-
-        System.out.println("\n" + l1.cor +"\n"+ l1.genero + "\n" + l1.paginas + " páginas");
-
-        //Métodos
+        l1.setCor("Amarelo");
+        l1.setGenero("Auto-Ajuda");
+        l1.setPaginas(200);
+        System.out.println("\n LIVRO");
+        System.out.println("Cor: "+l1.getCor());
+        System.out.println("Genero "+l1.getGenero());
+        System.out.println("Numero de Paginas: "+l1.getPaginas());        
         l1.abrir();
-
         l1.ler();
-
         l1.fechar();
 
         //-----------------------------------------------------------//
 
         //MOTO
         Moto m1 = new Moto();
-        
-        //Atributos
         m1.nome = "Tornado";
         m1.marca = "Honda";
         m1.cl = 250; //Cilindradas
