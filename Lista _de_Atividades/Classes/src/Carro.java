@@ -1,23 +1,54 @@
 public class Carro {
 
     //Atributos
-    String nome;
-    String marca;
-    int vel;
+    private String nome;
+    private String marca;
+    private int vel;
+    public Carro(){
+
+    }
+    //Construtor
+    public Carro(String nome, String marca, int vel){
+        this.nome = nome;
+        this.marca = marca;
+        this.vel = vel;
+    }
+
+    public void setNome(String nome){
+        this.nome = nome;
+    }
+    
+    public String getNome(){
+        return nome;
+    }
+
+    public void setMarca(String marca){
+        this.marca = marca;
+    }
+
+    public String getMarca(){
+        return marca;
+    }
+
+    public void setVel(int vel){
+        this.vel = vel;
+    }
+
+    public int getVel(){
+        return vel;
+    }
 
     //Métodos
-    void acelerar(int aceleracao) {
-        vel += aceleracao;
+    public void acelerar() {
+        System.out.println("Estamos acelerando pois estamos na estrada...");    }
+
+    public void freiar() {
+        System.out.println("Freiamos pois chegamos no endereço!"); 
     }
 
-    void freiar(int reduzir) {
-        vel -= reduzir; 
+    public void buzinar(){
+        System.out.println("Bibiiiiiiiih (Buzina)");
     }
-
-    void buzinar(){
-        System.out.println("Bibiiiiiiiih");
-    }
-
 
     
 }

@@ -1,65 +1,49 @@
 public class Teste {
     
     public static void main(String[] args) {
-        
-        //CARRO
-        Carro c1 = new Carro();
-
-        //Atributos
-        c1.nome = "Uno";
-        c1.marca = "FIAT";
-        c1.vel = 20;
-
-        System.out.println(c1.nome + "\n" + c1.marca + "\n" + c1.vel);
-        
-        //Métodos
-        c1.acelerar(100);
-
-        System.out.println("Velocidade acelerando " +c1.vel+"Km/h");
-
-        c1.freiar(120);
-
-        System.out.println("Velocidade reduzindo " +c1.vel+"Km/h");
-
-        c1.buzinar();
-
-        //-----------------------------------------------------------//
 
         //CADEIRA
         Cadeira cad1 = new Cadeira();
-
-        //Atributos
-        cad1.cor = "Couro";
-        cad1.material = "Metal";
-        cad1.tipo = "Escritório";
-
-        System.out.println("\n" + cad1.cor +"\n"+ cad1.material + "\n" + cad1.tipo);
-
-        //Métodos
+        cad1.setCor("Azul");
+        cad1.setMaterial("Madeira");
+        cad1.setTipo("Escritório");
+        System.out.println("\n CADEIRA");
+        System.out.println("Cor: "+cad1.getCor());
+        System.out.println("Material: "+cad1.getMaterial());
+        System.out.println("Tipo: "+cad1.getTipo());
         cad1.arrastar();
-
         cad1.sentar();
-
         cad1.levantar();
 
         //-----------------------------------------------------------//
 
         //CANETA
         Caneta can1 = new Caneta();
-
-        //Atributos
-        can1.cor = "Azul";
-        can1.marca = "BIC";
-        can1.ponta = 1.0f;
-
-        System.out.println("\n" + can1.cor +"\n"+ can1.marca + "\n" + can1.ponta);
-        
-        //Métodos
+        can1.setCor("Azul");
+        can1.setMarca("BIC");
+        can1.setPonta(1.0f);
+        System.out.println("\n CANETA");
+        System.out.println("Cor: "+can1.getCor());
+        System.out.println("Marca: "+can1.getMarca());
+        System.out.println("Ponta: "+can1.getPonta());
         can1.destampar();
-
         can1.escrever();
-
         can1.tampar();
+
+        //-----------------------------------------------------------//
+
+        //CARRO
+        Carro c1 = new Carro();
+        c1.setNome("Uno");
+        c1.setMarca("FIAT");
+        c1.setVel(20);
+        System.out.println("\n CARRO");
+        System.out.println("Nome: "+c1.getNome());
+        System.out.println("Marca: "+c1.getMarca());
+        System.out.println("Velocidade: "+c1.getVel());
+        c1.acelerar();
+        c1.freiar();
+        c1.buzinar();
 
         //-----------------------------------------------------------//
 
