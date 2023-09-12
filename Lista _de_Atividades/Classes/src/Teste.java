@@ -124,38 +124,30 @@ public class Teste {
 
         //TELEFONE
         Telefone tel1 = new Telefone();
-
-        //Atributos
-        tel1.marca = "Samgung";
-        tel1.sistema = "Android";
-        tel1.cor = "Prata";
-
-        System.out.println("\n" + tel1.marca + "\n" + tel1.sistema + "\n" + tel1.cor);
-
-        //Métodos
+        tel1.setMarca ("Samgung");
+        tel1.setSistema ("Android");
+        tel1.setCor("Prata");
+        System.out.println("\n9) TELEFONE");
+        System.out.println("Marca: "+tel1.getMarca());
+        System.out.println("Sistema: "+tel1.getSistema());
+        System.out.println("Cor: "+tel1.getCor());
         tel1.discar();
-        
         tel1.ligarChamada();
-
         tel1.desligarChamada();
 
         //-----------------------------------------------------------//
 
         //TELEVISÃO
         Televisao tv1 = new Televisao();
-
-        //Atributos
-        tv1.marca = "LG";
-        tv1.cor = "Prata";
-        tv1.funciona = true;
-
-        System.out.println("\n" +tv1.marca+ "\n" +tv1.cor+ "\n" +tv1.funciona);
-
-        //Métodos
+        tv1.setMarca("LG");
+        tv1.setCor("Prata");
+        tv1.setFunciona(true);
+        System.out.println("\n10) TELEVISAO");
+        System.out.println(("Marca: "+tv1.getMarca()));
+        System.out.println("Cor: "+tv1.getCor());
+        System.out.println("Funciona: "+tv1.getFunciona());
         tv1.ligar();
-
         tv1.mudarCanal();
-
         tv1.desligar();
     }
 
