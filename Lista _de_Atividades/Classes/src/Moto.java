@@ -13,6 +13,30 @@ public class Moto {
         this.cl = cl;
     }
 
+    public void setNome(String nome){
+        this.nome = nome;
+    }
+
+    public String getNome(){
+        return nome;
+    }
+
+    public void setMarca(String marca){
+        this.marca = marca;
+    }
+
+    public String getMarca(){
+        return marca;
+    }
+
+    public void setCl(int cl){
+        this.cl = cl;
+    }
+
+    public int getCl(){
+        return cl;
+    }
+
     //Métodos
    public void ligar(){
         System.out.println("A moto esta ligada");

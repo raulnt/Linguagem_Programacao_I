@@ -1,4 +1,4 @@
-public class Tv{
+public class Televisao{
 
     //Atributos
     String marca;

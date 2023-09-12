@@ -7,7 +7,7 @@ public class Teste {
         cad1.setCor("Azul");
         cad1.setMaterial("Madeira");
         cad1.setTipo("Escritório");
-        System.out.println("\n CADEIRA");
+        System.out.println("\n1) CADEIRA");
         System.out.println("Cor: "+cad1.getCor());
         System.out.println("Material: "+cad1.getMaterial());
         System.out.println("Tipo: "+cad1.getTipo());
@@ -22,7 +22,7 @@ public class Teste {
         can1.setCor("Azul");
         can1.setMarca("BIC");
         can1.setPonta(1.0f);
-        System.out.println("\n CANETA");
+        System.out.println("\n2) CANETA");
         System.out.println("Cor: "+can1.getCor());
         System.out.println("Marca: "+can1.getMarca());
         System.out.println("Ponta: "+can1.getPonta());
@@ -37,7 +37,7 @@ public class Teste {
         c1.setNome("Uno");
         c1.setMarca("FIAT");
         c1.setVel(20);
-        System.out.println("\n CARRO");
+        System.out.println("\n3) CARRO");
         System.out.println("Nome: "+c1.getNome());
         System.out.println("Marca: "+c1.getMarca());
         System.out.println("Velocidade: "+c1.getVel());
@@ -52,7 +52,7 @@ public class Teste {
         l1.setCor("Amarelo");
         l1.setGenero("Auto-Ajuda");
         l1.setPaginas(200);
-        System.out.println("\n LIVRO");
+        System.out.println("\n4) LIVRO");
         System.out.println("Cor: "+l1.getCor());
         System.out.println("Genero "+l1.getGenero());
         System.out.println("Numero de Paginas: "+l1.getPaginas());        
@@ -64,55 +64,60 @@ public class Teste {
 
         //MOTO
         Moto m1 = new Moto();
-        m1.nome = "Tornado";
-        m1.marca = "Honda";
-        m1.cl = 250; //Cilindradas
-        
-        System.out.println("\n" +m1.nome +"\n"+ m1.marca + "\n" + m1.cl + " cilindradas");
-
-        //Métodos
-        m1.ligar();
-        
+        m1.setNome ("Tornado");
+        m1.setMarca ("Honda");
+        m1.setCl (250); //Cilindradas 
+        System.out.println("\n5) MOTO");
+        System.out.println("Nome: "+m1.getNome());
+        System.out.println("Marca: "+m1.getMarca());
+        System.out.println("Cilindradas: "+m1.getCl());
+        m1.ligar();        
         m1.passarMarcha();
-
         m1.acelerar();
         
         //-----------------------------------------------------------//
 
         //PORTA
         Porta p1 = new Porta();
-
-        //Atributos
-        p1.cor = "Branca";
-        p1.material = "Madeira";
-        p1.macaneta = true;
-
-        System.out.println("\n" +p1.cor +"\n"+ p1.material + "\n" + p1.macaneta);
-
-        //Métodos
+        p1.setCor ("Branca");
+        p1.setMaterial ("Madeira");
+        p1.setMacaneta (true);
+        System.out.println("\n6) PORTA");
+        System.out.println("Cor: "+p1.getCor());
+        System.out.println("Material: "+p1.getMaterial());
+        System.out.println("Possui maçaneta?: "+p1.getMacaneta());
         p1.destrancar();
-
         p1.abrir();
-        
         p1.fechar();
+
+        //-----------------------------------------------------------//
+
+        //PRODUTO
+        Produto pro1 = new Produto();
+        pro1.setNome("Garrafa(Agua)");
+        pro1.setMarca("Bonafonte");
+        pro1.setValor(2.20f);
+        System.out.println("\n7) PRODUTO");
+        System.out.println("Nome: "+pro1.getNome());
+        System.out.println("Marca: "+pro1.getMarca());
+        System.out.println("Valor: "+pro1.getValor());
+        pro1.destampar();
+        pro1.beber();
+        pro1.reclicar();
 
         //-----------------------------------------------------------//
 
         //TECLADO
         Teclado t1 = new Teclado();
-
-        //Atribudos
-        t1.cor = "Preto";
-        t1.marca = "HyperX";
-        t1.numTeclas = 88;
-
-        System.out.println("\n" + t1.cor + "\n" + t1.marca + "\n" + t1.numTeclas );
-
-        //Métodos
+        t1.setCor("Preto");
+        t1.setMarca("HyperX");
+        t1.setNumTeclas(88);
+        System.out.println("\n8) TECLADO");
+        System.out.println("Cor: "+t1.getCor());
+        System.out.println("Marca: "+t1.getMarca());
+        System.out.println("Numero de Teclas: "+t1.getNumTeclas());
         t1.ligar();
-
         t1.teclar();
-
         t1.desligar();
 
         //-----------------------------------------------------------//
@@ -136,8 +141,8 @@ public class Teste {
 
         //-----------------------------------------------------------//
 
-        //TV
-        Tv tv1 = new Tv();
+        //TELEVISÃO
+        Televisao tv1 = new Televisao();
 
         //Atributos
         tv1.marca = "LG";
@@ -152,24 +157,6 @@ public class Teste {
         tv1.mudarCanal();
 
         tv1.desligar();
-
-        //-----------------------------------------------------------//
-
-        //VENTILADOR
-        Ventilador vent1 = new Ventilador();
-
-        //Atributos
-        vent1.marca = "Britania";
-        vent1.cor = "Preto";
-        vent1.voltz = 220;
-
-        System.out.println("\n" +vent1.marca+ "\n" +vent1.cor+ "\n" +vent1.voltz);
-
-        vent1.ligar();
-
-        vent1.mover();
-
-        vent1.desligar();
     }
 
 }
