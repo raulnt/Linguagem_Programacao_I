@@ -1,20 +1,28 @@
 public class Moto {
 
     //Atributos
-    String nome;
-    String marca;
-    int cl;
+    private String nome;
+    private String marca;
+    private int cl;
+    public Moto(){
+    }
+
+    public Moto(String nome, String marca, int cl){
+        this.nome = nome;
+        this.nome = marca;
+        this.cl = cl;
+    }
 
     //Métodos
-    void ligar(){
+   public void ligar(){
         System.out.println("A moto esta ligada");
     }
 
-    void passarMarcha(){
+    public void passarMarcha(){
         System.out.println("Engatando a primeira marcha para baixo");
     }
 
-    void acelerar(){
+    public void acelerar(){
         System.out.println("Acelerando e saindo de casa.");
     }
 }
