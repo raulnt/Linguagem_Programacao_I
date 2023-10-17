@@ -2,5 +2,5 @@
 Repositório para a matéria Linguagem do 2° Semestre do curso de Banco de Dados - FATEC
 
 * Exercícios
-* Testes de Mesa
-* Criação de Classes
+* Classes
+* EstruturaDados
