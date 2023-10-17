@@ -3,4 +3,5 @@ Repositório da matéria Linguagem de Programação I do 2° Semestre do curso d
 
 * Exercícios
 * Classes
-* EstruturaDados
+* Estrutura de Dados
+* Tratamento de Exceção
